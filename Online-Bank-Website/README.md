@@ -1,8 +1,6 @@
-# [Start Bootstrap - SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/)
+# Online Bank Website
 
-[SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
-
-For the legacy Bootstrap 3 version of this theme, you can view the [last stable release](https://github.com/StartBootstrap/startbootstrap-sb-admin-2/releases/tag/v3.3.7%2B1) of SB Admin 2 for Bootstrap 3.
+WE used [SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/) which is an open source admin dashboard theme for Bootstrap as a starting template.
 
 ## Preview
 
@@ -10,10 +8,37 @@ For the legacy Bootstrap 3 version of this theme, you can view the [last stable 
 
 **[Launch Live Preview](https://startbootstrap.github.io/startbootstrap-sb-admin-2/)**
 
-## Download and Installation
+## Getting Started
 
-To begin using this template, choose one of the following options to get started:
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-- Clone the repo: `git clone https://github.com/software-engineering-2023/Code-PROs`
-- move to website's directory: `cd Online-Bank-Website`
-- start via npm: `npm start`
+### Prerequisites
+
+NodeJS should be installed on your machine.
+
+### How to run
+
+1. Clone the repository.
+
+```sh
+git clone https://github.com/software-engineering-2023/Code-PROs
+```
+
+2. Move to the website's directory.
+
+```sh
+cd Code-PROs\Online-Bank-Website
+```
+
+3. Install live-server (It is needed to run on a server because Chrome prevent CORS ON file scheme).
+
+```sh
+npm install -g live-server
+```
+
+4. Run a local server to view project. (for some reason port 3000 works fine but not the default 8080)
+
+```sh
+ live-server --port=3000
+```

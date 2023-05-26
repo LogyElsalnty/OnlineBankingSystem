@@ -1,7 +1,7 @@
 {
     "title": "Online Bank Websote",
     "scripts": {
-        "start": "start dashboard_user.html"
+        "start": "start index.html"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.15.3",

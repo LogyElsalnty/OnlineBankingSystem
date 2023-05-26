@@ -20,13 +20,21 @@
             <span>Dashboard</span></a>
     </li>
 
-    <!-- Nav Item - History -->
     <li class="nav-item">
-        <a class="nav-link" href="../history.html">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTransactions" aria-expanded="true"
+            aria-controls="collapseTransactions">
             <i class="fas fa-fw fa-table"></i>
             <span>Transactions</span>
         </a>
+        <div id="collapseTransactions" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Choose:</h6>
+                <a class="collapse-item" href="../history_account.html">Account</a>
+                <a class="collapse-item" href="../history_card.html">Credit Card</a>
+            </div>
+        </div>
     </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider">
 
@@ -46,12 +54,12 @@
 
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-            aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseApply"
+            aria-expanded="true" aria-controls="collapseApply">
             <i class="fas fa-fw fa-folder-open"></i>
             <span>Apply For</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div id="collapseApply" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Choose:</h6>
                 <a class="collapse-item" href="../card.html">Credit Card</a>
