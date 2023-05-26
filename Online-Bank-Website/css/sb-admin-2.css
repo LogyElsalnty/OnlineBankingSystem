@@ -10866,6 +10866,12 @@ a:focus {
   background-size: cover;
 }
 
+.bg-login {
+  background: url(https://img.freepik.com/free-photo/high-angle-abstract-colorful-bent-sheets-paper_23-2148428722.jpg?w=996&t=st=1685027455~exp=1685028055~hmac=a899d7e99aa22272da3b8045b60debf4aed14c2431895950bdc9da27395b17e9);
+  background-position: center;
+  background-size: cover;
+}
+
 .bg-register-image {
   background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
   background-position: center;

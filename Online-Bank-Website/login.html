@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,14 +22,14 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-login">
 
     <div class="container">
 
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
-            <div class="col-xl-10 col-lg-12 col-md-9">
+            <div class="col-xl-12 col-lg-12 col-md-9">
 
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
@@ -41,7 +41,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form novalidate class="login">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
@@ -58,14 +58,14 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login
-                                        </a>
+                                        </button>
                                         <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
+                                        <a href="dashboard_user.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
                                         </a>
-                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                        <a href="dashboard_user.html" class="btn btn-facebook btn-user btn-block">
                                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                         </a>
                                     </form>
@@ -88,6 +88,8 @@
 
     </div>
 
+
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -98,6 +100,31 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
+    <script>
+        // Add form submission event listener
+        var form = document.querySelector('.login');
+        form.addEventListener('submit', handleSubmit);
+
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); 
+
+            // Get the input values
+            var usernameInput = document.getElementById('exampleInputEmail');
+            var passwordInput = document.getElementById('exampleInputPassword');
+
+            // Check if the username and password are correct
+            if (usernameInput.value === 'admin' && passwordInput.value === 'admin')
+                // Redirect to dashboard_user.html
+                window.location.href = 'bankerdashboard_user.html';
+            else
+                if (usernameInput.value === 'user' && passwordInput.value === 'user')
+                    window.location.href = 'dashboard_user.html';
+                else
+                    alert('Invalid username or password');
+        }
+    </script>
+   
 </body>
 
 </html>
