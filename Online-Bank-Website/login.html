@@ -111,14 +111,17 @@
             var passwordInput = document.getElementById('exampleInputPassword');
 
             // Check if the username and password are correct
-            if (usernameInput.value === 'admin' && passwordInput.value === 'admin')
+            if (usernameInput.value === 'admin')
                 // Redirect to dashboard_user.html
-                window.location.href = 'bankerdashboard_user.html';
+                window.location.href = 'dashboard_admin.html';
             else
-                if (usernameInput.value === 'user' && passwordInput.value === 'user')
+                if (usernameInput.value === 'user')
                     window.location.href = 'dashboard_user.html';
                 else
-                    alert('Invalid username or password');
+                    if (usernameInput.value === 'banker')
+                        window.location.href = 'dashboard_banker.html';
+                    else
+                        alert('Invalid username or password');
         }
     </script>
    

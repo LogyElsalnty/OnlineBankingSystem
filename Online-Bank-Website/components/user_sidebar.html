@@ -28,9 +28,10 @@
         </a>
         <div id="collapseTransactions" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Choose:</h6>
+                <h6 class="collapse-header">Transactions:</h6>
                 <a class="collapse-item" href="../history_account.html">Account Transactions</a>
                 <a class="collapse-item" href="../history_card.html">Card Transactions</a>
+                <h6 class="collapse-header">Applications:</h6>
                 <a class="collapse-item" href="../history_loans.html">Loan Applications</a>
                 <a class="collapse-item" href="../history_card_applications.html">Card Applications</a>
             </div>
@@ -45,14 +46,21 @@
         Financial
     </div>
 
-
-    <!-- Nav Item - History -->
     <li class="nav-item">
-        <a class="nav-link" href="../payment.html">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayment"
+            aria-expanded="true" aria-controls="collapsePayment">
             <i class="fas fa-fw fa-cart-plus"></i>
             <span>Payment</span>
         </a>
+        <div id="collapsePayment" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Choose:</h6>
+                <a class="collapse-item" href="../index.html">Bills</a>
+                <a class="collapse-item" href="../index.html">Transfer Money</a>
+            </div>
+        </div>
     </li>
+
 
     <li class="nav-item">
         <a class="nav-link" href="../redeempts.html">
@@ -66,7 +74,7 @@
   
     <!-- Nav Item - History -->
     <li class="nav-item">
-        <a class="nav-link" href="../payment.html">
+        <a class="nav-link" href="../credit_debt.html">
             <i class="fas fa-fw fa-wallet"></i>
             <span>Credit Debt</span>
         </a>
