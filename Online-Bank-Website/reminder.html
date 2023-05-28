@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>Set a Reminder</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -47,25 +47,50 @@
                 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
-                    
-                    <!-- we write here -->
+                    <!-- Outer Row -->
+                    <div class="row justify-content-center">
+
+                    <div class="col-xl-10 col-lg-12 col-md-8">
+                        <div class="card o-hidden border-0 shadow-lg my-3">
+                            <div class="card-body p-0">
+                                
+                                <<div class="text-center">
+                                    <h3 class="text-capitalize font-weight-bold text-gray-900 mt-3 mb-4">Set a Reminder!</h3>
+                                </div>
 
 
+                                <div class="row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group mb-4">
+                                            <select class="form-control">
+                                                <option>Enter Bill Type</option>
+                                                <option>Electricity</option>
+                                                <option>Phone</option>
+                                                <option>Gas</option>
+                                                <option>Water</option>
+                                                <option>Something</option>
+                                            </select>
+                                        </div>
 
+                                        <div class="form-group mb-4">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="mb-5 mt-2">
+                                                <button data-toggle="modal" data-target="#Modal" type="submit" class="btn btn-primary btn-user font-weight-bolder px-5">
+                                                    Set Now
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </div>
 
-
-
-
-
-
-
-
-
-
-
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
                 </div>
@@ -110,6 +135,23 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Done Successfully</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Press close this window to go to your dashboard.</div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="dashboard_user.html">Close</a>
                 </div>
             </div>
         </div>

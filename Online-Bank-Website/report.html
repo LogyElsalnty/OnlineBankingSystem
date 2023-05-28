@@ -81,7 +81,6 @@
                                                 <div class="text-center">
                                                     <h1 class="h3 text-capitalize font-weight-bold text-gray-900 mb-4">Report an issue!</h1>
                                                 </div>
-                                                <form novalidate class="user">
                                                     <div class="form-group mb-4">
                                                         <input type="email" class="form-control" id="exampleInputEmail"
                                                             aria-describedby="emailHelp" placeholder="Enter Your Email Address...">
@@ -101,12 +100,12 @@
                                                         
                                                     </div>
                                                     <div class="form-group d-flex justify-content-center mb-4">
-                                                        <button type="submit" class="btn btn-warning btn-user font-weight-bolder w-25">
+                                                        <button type="submit" class="btn btn-warning btn-user font-weight-bolder w-25"
+                                                                                data-toggle="modal" data-target="#Modal">
                                                             Submit
                                                         </button>
                                                     </div>
                                                     <!-- write me a div for checkbox to accept terms and conditions -->
-                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -139,6 +138,23 @@
     </div>
     <!-- End of Page Wrapper -->
 
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Done Successfully</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Press close this window to go to your dashboard.</div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="dashboard_user.html">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
@@ -163,30 +179,6 @@
         $(function () {
             $("#topbar-placeholder").load("components/topbar.html");
         });
-    </script>
-
-    <script>
-        // Add form submission event listener
-        var form = document.querySelector('.user');
-        form.addEventListener('submit', handleSubmit);
-
-        // Function to handle form submission
-        function handleSubmit(event) {
-            event.preventDefault(); 
-
-            // Get the input values
-            var usernameInput = document.getElementById('exampleInputEmail');
-            var exampleFormControlTextarea1 = document.getElementById('exampleFormControlTextarea1');
-
-            // Check if the username and password are correct
-            if (!usernameInput || usernameInput.value == undefined || !exampleFormControlTextarea1 || exampleFormControlTextarea1.value == undefined || exampleFormControlTextarea1.value === '')
-                alert("Please fill the required fields");
-            else {
-                alert("Your issue has been reported successfully!");
-                window.location.href = "dashboard_user.html"
-            }
-            
-        }
     </script>
 
 

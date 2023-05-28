@@ -22,7 +22,7 @@ NodeJS should be installed on your machine.
 1. Clone the repository.
 
 ```sh
-git clone https://github.com/software-engineering-2023/Code-PROs
+git clone https://github.com/software-engineering-2023/Code-PROs.git
 ```
 
 2. Move to the website's directory.
