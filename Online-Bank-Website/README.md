@@ -28,7 +28,7 @@ git clone https://github.com/software-engineering-2023/Code-PROs.git
 2. Move to the website's directory.
 
 ```sh
-cd Code-PROs\Online-Bank-Website
+cd Code-PROs/Online-Bank-Website
 ```
 
 3. Install live-server (It is needed to run on a server because Chrome prevent CORS ON file scheme).
