@@ -28,9 +28,97 @@
     <div id="wrapper">
 
         <!-- side bar here -->
-        <div id="sidebar-placeholder">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         
-        </div>
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-building-columns"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">MoneyVault</div>
+            </a>
+        
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+        
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+        
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Logs
+            </div>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="../view_clients.html">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Clients</span></a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseApplications"
+                    aria-expanded="true" aria-controls="collapseApplications">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Applications</span>
+                </a>
+                <div id="collapseApplications" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="../banker_loans_applications.html">Loan Applications</a>
+                        <a class="collapse-item" href="../banker_card_applications.html">Card Applications</a>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTransactions"
+                    aria-expanded="true" aria-controls="collapseTransactions">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Transactions</span>
+                </a>
+                <div id="collapseTransactions" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="../banker_history_account.html">Account Transactions</a>
+                        <a class="collapse-item" href="../banker_history_card.html">Card Transactions</a>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="../Support Requests.html">
+                    <i class="fas fa-fw fa-headset"></i>
+                    <span>Support Requests</span>
+                </a>
+            </li>
+        
+        
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+        
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Other
+            </div>
+        
+        
+            <!-- Nav Item - History -->
+            <li class="nav-item">
+                <a class="nav-link" href="../announcement.html">
+                    <i class="fas fa-fw fa-scroll"></i>
+                    <span>Post Announcement</span>
+                </a>
+            </li>
+        
+        
+        </ul>
+        <!-- End of Sidebar -->
+
 
 
         <!-- Content Wrapper -->
@@ -40,9 +128,49 @@
             <div id="content">
 
                 <!-- top bar here -->
-                <div id="topbar-placeholder">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                 
-                </div>
+                    <!-- Navbar - Brand -->
+                    <a class="navbar-brand d-flex align-items-center justify-content-center">
+                        <div class="navbar-brand-text mt-2 ml-2 text-primary font-weight-bold h2">
+                            <label id="page">Dashboard</label>
+                        </div>
+                    </a>
+                
+                    <!-- Divider -->
+                    <hr class="navbar-divider my-0">
+                
+                
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                
+                
+                
+                
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">John Doe</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                
+                    </ul>
+                
+                </nav>
+                <!-- End of Topbar -->
+
 
                 
                 <!-- Begin Page Content -->
@@ -173,14 +301,9 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <script>
-        $(function () {
-            $("#sidebar-placeholder").load("/components/banker_sidebar.html");
-        });
-        $(function () {
-            $("#topbar-placeholder").load("/components/other_topbar.html");
-        });
+        document.getElementById('page').innerText = document.querySelector('title').text;
+        // remove activity log if not user
     </script>
-
 
 </body>
 
