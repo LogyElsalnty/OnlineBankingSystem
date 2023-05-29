@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Profile</title>
+    <title>Account</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -53,23 +53,33 @@
                     <!-- write code for a profile page -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    ㅤ
+                                    <a href="dashboard_user.html" class="btn btn-primary">
+                                <i class="fas fa-arrow-left"></i>
+                                Back to Dashboard
+                            </a>
                                 </div>
                                 <div class="card-body">
 
                                     <div class="row justify-content-center my-1">
                                         <div class="col-xl-12 col-lg-12 col-md-9">
-                                            <label>Account Number</label>
                                             <div class="mb-4">
+                                                <label>Account Number</label>
                                                 <input disabled type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="00000000000000000">
                                             </div>
 
-                                            <label>Account Type</label>
                                             <div class="mb-4">
+                                                <label>Account Type</label>
                                                 <input disabled type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
                                                     placeholder="Current">
                                             </div>
+
+                                            <div hidden class="balance mb-4">
+                                                <label>Balance</label>
+                                                <input disabled type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                                                    placeholder="$50,000">
+                                            </div>
+
                                             <div class="form-group d-flex justify-content-center pt-5 mx-2">
                                                 <button type="submit" class="btn btn-danger btn-user font-weight-bolder w-25" data-toggle="modal"
                                                     data-target="#Modal">
@@ -123,7 +133,24 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="font-weight-bolder modal-title" id="ModalLabel">Done Successfully</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Sorry to hear that, please contact us for any complaint.</div>
+                <div class="modal-footer">
+                    <a class="btn btn-danger" href="index.html">Close</a>
                 </div>
             </div>
         </div>

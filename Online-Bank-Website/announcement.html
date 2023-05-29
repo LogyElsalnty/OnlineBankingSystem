@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Set a Reminder</title>
+    <title>Post an Announcement</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -50,44 +50,48 @@
                     <!-- Outer Row -->
                     <div class="row justify-content-center">
 
-                    <div class="col-xl-10 col-lg-12 col-md-8">
+                        <div class="col-xl-10 col-lg-12 col-md-8">
                         <div class="card o-hidden border-0 shadow-lg my-3">
+                            <div class="card-header">
+                                <a href="dashboard_user.html" class="btn btn-primary">
+                                    <i class="fas fa-arrow-left"></i>
+                                    Back to Dashboard
+                                </a>
+                            </div>
                             <div class="card-body p-0">
                                 
-                                <<div class="text-center">
-                                    <h3 class="text-capitalize font-weight-bold text-gray-900 mt-3 mb-4">Set a Reminder!</h3>
-                                </div>
-
-
+                                <!-- Nested Row within Card Body -->
                                 <div class="row">
-                                    <div class="col-lg-2"></div>
-                                    <div class="col-lg-8">
-                                        <div class="form-group mb-4">
-                                            <select class="form-control">
-                                                <option>Enter Bill Type</option>
-                                                <option>Electricity</option>
-                                                <option>Phone</option>
-                                                <option>Gas</option>
-                                                <option>Water</option>
-                                                <option>Something</option>
-                                            </select>
-                                        </div>
-                                
-                                        <div class="form-group mb-4">
-                                            <input type="date" class="form-control">
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <div class="mb-5 mt-2">
-                                                <button data-toggle="modal" data-target="#Modal" type="submit"
-                                                    class="btn btn-primary btn-user font-weight-bolder px-5">
-                                                    Set Now
-                                                </button>
+                                    <div class="col-lg-12">
+                                        <div class="px-5 py-3">
+                                            <div class="form-group my-4">
+                                                <select class="form-control" id="categorySelect">
+                                                    <option value="">Priority</option>
+                                                    <option value="category2">Urgent</option>
+                                                    <option value="category1">Important</option>
+                                                    <option value="category3">Normal</option>
+                                                </select>
+
                                             </div>
+                                                <div class="form-group my-4">
+                                                    <input type="text" class="form-control" id="exampleInputEmail"
+                                                        aria-describedby="emailHelp" placeholder="Enter Announcement Header">
+                                                </div>
+
+                                                <div class="form-group mb-4">
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                        placeholder="Enter Announcement Description..."></textarea>
+                                                </div>
+
+
+                                                <div class="form-group d-flex justify-content-center mb-4">
+                                                    <button data-toggle="modal" data-target="#Modal" type="submit" class="btn btn-primary btn-user font-weight-bolder w-25">
+                                                        Post
+                                                    </button>
+                                                </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2"></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -135,7 +139,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="index.html">Logout</a>
                 </div>
             </div>
         </div>
@@ -170,10 +174,10 @@
 
     <script>
         $(function () {
-            $("#sidebar-placeholder").load("/components/user_sidebar.html");
+            $("#sidebar-placeholder").load("/components/banker_sidebar.html");
         });
         $(function () {
-            $("#topbar-placeholder").load("/components/topbar.html");
+            $("#topbar-placeholder").load("/components/other_topbar.html");
         });
     </script>
 

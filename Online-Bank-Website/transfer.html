@@ -55,7 +55,10 @@
                         <div class="col-xl-10 col-lg-12 col-md-8 justify-content-center">
                             <div class="card o-hidden border-0 shadow-lg my-3 justify-content-center">
                                 <div class="card-header">
-                                    ㅤ
+                                    <a href="dashboard_user.html" class="btn btn-primary">
+                                <i class="fas fa-arrow-left"></i>
+                                Back to Dashboard
+                            </a>
                                 </div>
                                 <div class="card-body mt-0 justify-content-center pt-4 px-5">
                                     <!-- <div class="text-center">
@@ -85,22 +88,35 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="form-group d-flex justify-content-center mt-2">
+                                    <div class="form-group d-flex justify-content-center mt-3">
                                         <select class="form-control w-50" id="categorySelect">
                                             <option value="">Transfer Type</option>
                                             <option value="category2">National</option>
                                             <option value="category2">International</option>
                                             <option value="category2">Domestic</option>
-                                    
                                         </select>
                                     </div>
-                                    <div class="form-group d-flex justify-content-center mt-2">
+                                    <div class="form-group d-flex justify-content-center mt-3">
                                         <input type="number" class="form-control w-50" id="exampleInputEmail" aria-describedby="emailHelp"
                                             placeholder="Enter Receiver Account Number...">
                                     </div>
-                                    <div class="form-group d-flex justify-content-center mt-2">
+                                    <div class="form-group d-flex justify-content-center mt-3">
+                                        <select class="form-control w-50" id="categorySelect">
+                                            <option value="">Currency</option>
+                                            <option value="category2">EGP</option>
+                                            <option value="category2">USD</option>
+                                            <option value="category2">Euro</option>
+                                            <option value="category2">JPY</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-center mt-3">
                                         <input type="number" class="form-control w-50" id="exampleInputEmail" aria-describedby="emailHelp"
                                             placeholder="Enter money amount...">
+                                    </div>
+                                    <div class="form-group d-flex justify-content-center mt-3">
+                                        <textarea class="form-control w-50" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="Enter a Description..."></textarea>
+                                    
                                     </div>
                                     <div class="form-group d-flex justify-content-center mt-4">
                                         <button data-toggle="modal" data-target="#Modal" type="submit"
@@ -153,7 +169,7 @@
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
+                        <a class="btn btn-primary" href="index.html">Logout</a>
                     </div>
                 </div>
             </div>
@@ -163,14 +179,14 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="font-weight-bolder modal-title" id="ModalLabel">Done Successfully</h5>
+                        <h5 class="font-weight-bolder modal-title" id="ModalLabel">Confirmation</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
-                    <div class="modal-body">Press close this window to go to your dashboard.</div>
+                    <div class="modal-body">Are you sure you want to this transaction.</div>
                     <div class="modal-footer">
-                        <a class="btn btn-primary" href="dashboard_user.html">Close</a>
+                        <a class="btn btn-primary" href="dashboard_user.html">Yes</a>
                     </div>
                 </div>
             </div>
