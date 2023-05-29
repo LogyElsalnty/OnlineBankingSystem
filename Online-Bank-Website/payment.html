@@ -167,7 +167,7 @@
                                     </div>
                                 </a>
 
-                                <a href="pay_service.html" class="text-decoration-none border-0 bg-white col-xl-4 col-md-6 mb-2">
+                                <a href="pay_service.html" class="text-decoration-none border-0 bg-white col-xl-4 col-md-6 mb-3">
                                     <div class="card card-hover m-4 shadow">
                                         <div class="card-body">
                                             <div class="row">
@@ -182,7 +182,7 @@
                                     </div>
                                 </a>
 
-                                <a href="pay_service.html" class="text-decoration-none border-0 bg-white col-xl-4 col-md-6 mb-2">
+                                <a href="pay_service.html" class="text-decoration-none border-0 bg-white col-xl-4 col-md-6 mb-3">
                                     <div class="card card-hover m-4 shadow">
                                         <div class="card-body">
                                             <div class="row">
@@ -197,9 +197,41 @@
                                     </div>
                                 </a>
                                 
+                            </div>
 
+                            <hr>
 
-                                
+                            <div class="text-center">
+                                <h3 class="text-capitalize font-weight-bold text-gray-900 mt-5 mb-4">Set a Reminder!</h3>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8">
+                                    <div class="form-group mb-4">
+                                        <select class="form-control">
+                                            <option>Enter Bill Type</option>
+                                            <option>Electricity</option>
+                                            <option>Phone</option>
+                                            <option>Gas</option>
+                                            <option>Water</option>
+                                            <option>Something</option>
+                                        </select>
+                                    </div>
+                            
+                                    <div class="form-group mb-4">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="mb-3 mt-2">
+                                            <button data-toggle="modal" data-target="#Moda" type="submit"
+                                                class="btn btn-primary btn-user font-weight-bolder px-5">
+                                                Set Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
                             </div>
                         </div>
                     </div>
@@ -260,6 +292,23 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Moda" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="font-weight-bolder modal-title" id="ModalLabel">Done Successfully</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Press close this window to go to your dashboard.</div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" data-dismiss="modal">Close</a>
                 </div>
             </div>
         </div>
